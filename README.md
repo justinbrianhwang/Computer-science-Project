@@ -1,2 +1,9 @@
-# computer-science
-데이터 구조, 검색, 인공 지능 등 컴퓨터 공학 관련 프로젝트와 학습 데이터.
+# Computer Science
+
+This repository contains projects and study materials related to computer science, including:
+- Data Structures
+- Algorithms
+- Artificial Intelligence
+- Operating Systems
+- Computer Architecture
+
