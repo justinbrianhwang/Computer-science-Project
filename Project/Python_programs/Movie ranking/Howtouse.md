@@ -1,32 +1,43 @@
-This Python script fetches and parses the weekly box office ranking from a specified URL using the requests and BeautifulSoup libraries. Here’s a detailed explanation of its functionality:
+# Python Script to Fetch Weekly Box Office Rankings
 
-Import Libraries:
+This Python script fetches and parses the weekly box office ranking from a specified URL using the `requests` and `BeautifulSoup` libraries. Here’s a detailed explanation of its functionality:
 
-requests is used to make HTTP requests to retrieve the webpage content.
-BeautifulSoup from the bs4 library is used for parsing the HTML content of the webpage.
-Fetch Webpage Content:
+## Import Libraries
 
-The script sends a GET request to the URL 'https://movie.daum.net/ranking/boxoffice/weekly'.
-It checks if the request was successful by verifying if the HTTP status code is 200.
-Parse HTML Content:
+- `requests` is used to make HTTP requests to retrieve the webpage content.
+- `BeautifulSoup` from the `bs4` library is used for parsing the HTML content of the webpage.
 
-If the request is successful, it uses BeautifulSoup to parse the HTML content of the webpage.
-Extract Movie Information:
+## Fetch Webpage Content
 
-It finds all div elements with the class thumb_cont, which contain the movie information.
-It iterates through the first five of these div elements (since we only want the top 5 movies) and extracts the relevant details:
-Rank: Determined by the position in the iteration.
-Title: Extracted from the strong element with the class tit_item.
-Release Date: Extracted from the span element with the class txt_info, specifically from its child span with the class txt_num.
-Audience Count: Extracted from the span element that contains the string "관객수", and then from its next sibling element.
-Print Movie Information:
+- The script sends a GET request to the URL 'https://movie.daum.net/ranking/boxoffice/weekly'.
+- It checks if the request was successful by verifying if the HTTP status code is 200.
 
-It prints the rank, title, release date, and cumulative audience count for the top 5 movies in a formatted output.
-Error Handling:
+## Parse HTML Content
 
-If the request to fetch the webpage fails, it prints an error message indicating the failure.
+- If the request is successful, it uses `BeautifulSoup` to parse the HTML content of the webpage.
+
+## Extract Movie Information
+
+- It finds all `div` elements with the class `thumb_cont`, which contain the movie information.
+- It iterates through the first five of these `div` elements (since we only want the top 5 movies) and extracts the relevant details:
+  - **Rank**: Determined by the position in the iteration.
+  - **Title**: Extracted from the `strong` element with the class `tit_item`.
+  - **Release Date**: Extracted from the `span` element with the class `txt_info`, specifically from its child `span` with the class `txt_num`.
+  - **Audience Count**: Extracted from the `span` element that contains the string "관객수", and then from its next sibling element.
+
+## Print Movie Information
+
+- It prints the rank, title, release date, and cumulative audience count for the top 5 movies in a formatted output.
+
+## Error Handling
+
+- If the request to fetch the webpage fails, it prints an error message indicating the failure.
+
+## Code Snippet
+
 Here is a code snippet for the described functionality:
 
+```python
 import requests
 from bs4 import BeautifulSoup
 
@@ -55,4 +66,3 @@ if response.status_code == 200:
         print(f'{rank}위: {title}\t(Release Date: {release_date})\n     (Cumulative Audience: {audience})\n')
 else:
     print('Request failed.')
-This script provides a structured way to fetch and display the weekly box office rankings, presenting the title, release date, and audience count for the top 5 movies.
