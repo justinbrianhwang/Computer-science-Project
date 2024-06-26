@@ -7,3 +7,7 @@ After turning it on, the screen appears as shown below. The Hello part shown bel
 
 Now let's look at a few things to use this editor.
 
+
+
+![before Vi editor](https://i.imgur.com/L8r1zgm.png)
+
