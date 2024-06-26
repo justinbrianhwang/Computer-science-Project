@@ -1,4 +1,4 @@
-## in English
+## In English
 Five main variable types are available in R. To check the type of a variable, use the `typeof()` function.
 
 ```
@@ -41,7 +41,7 @@ Variable <- T
 sets the variable to true.
 
 
-## in Korea
+## In Korea
 
 ### R의 변수 타입
 
