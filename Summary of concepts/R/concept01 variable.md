@@ -4,7 +4,7 @@ Five main variable types are available in R. To check the type of a variable, us
 ```
 typeof(variable)
 # If the output value is 'integer', it is an integer
-# If the output value is 'double', it is a mistake
+# If the output value is 'double', it is a double
 # If the output value is 'complex', it is a complex number
 # If the output value is 'character', then the character
 ```
