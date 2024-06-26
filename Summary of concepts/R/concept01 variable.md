@@ -7,6 +7,7 @@ typeof(variable)
 # If the output value is 'double', it is a double
 # If the output value is 'complex', it is a complex number
 # If the output value is 'character', then the character
+# If the output value is 'logical', it is a Logical variables
 ```
 
 Integer: You can use <- (arrow or assignment operator) to assign an integer to a variable. In R, numbers are basically treated as doubles, so to treat them as integers, you must add L to the end of the number. for example,
