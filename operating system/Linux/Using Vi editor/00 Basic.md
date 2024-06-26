@@ -1,4 +1,4 @@
-### In English
+# In English
 
 ![vi editor](https://i.imgur.com/x6LNGwu.png)
 The most used editor in Linux is the vi editor. You can launch the vi editor by writing the following in the Linux kernel.
@@ -24,7 +24,7 @@ Refer to the following diagram to understand the two main modes easily:
 
 - Press `:` and then type the desired command. After pressing `Enter`, you will return to Normal Command Mode.
 
-### In Korean
+# In Korean
 ![vi editor](https://i.imgur.com/x6LNGwu.png)
 Linux에서 가장 많이 사용되는 에디터는 vi 에디터이다. Linux 커널에서 다음 명령어를 입력하여 vi 에디터를 실행할 수 있다.
 
