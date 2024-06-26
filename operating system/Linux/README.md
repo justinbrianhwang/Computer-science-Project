@@ -1,1 +1,1 @@
-I have organized the default settings in Linux.
+I have organized Linux concept.
