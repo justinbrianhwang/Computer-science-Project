@@ -1,3 +1,5 @@
+# In English
+
 ### Insert Mode
 
 - `i`, `I`: These commands stand for "insert."
@@ -11,6 +13,8 @@
 ### Switching from Normal Command Mode to Ex Command Mode
 
 - Press `:` and then type the desired command. After pressing `Enter`, you will return to Normal Command Mode.
+
+# In Korean
 
 ### 입력 모드
 
