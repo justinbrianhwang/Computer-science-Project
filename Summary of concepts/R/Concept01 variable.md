@@ -59,7 +59,9 @@ C
 ```
 
 Let's look at the following code.
+
 ![Example Code](https://i.imgur.com/dM68qEG.png)
+
 In addition, you can use the sqrt function to paste radicals, and in the case of strings, you can use the paste function to paste them. This will be summarized in the next chapter.
 
 
