@@ -2,7 +2,7 @@
 
 ## Mathematical functions
 
-#### sqrt(x)
+#### `sqrt(x)`
 Calculate the square root of x
 
 
