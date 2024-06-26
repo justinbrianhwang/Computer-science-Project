@@ -40,6 +40,28 @@ Variable <- T
 ```
 sets the variable to true.
 
+## Using Arithmetic Operations and Variables
+We will use variables, perform arithmetic operations, and implement call functions. Variables will be used for various purposes.
+
+###Example of Arithmetic Operations
+
+```
+A <- 10
+B <- 5
+
+C <- A + B
+```
+
+If we write the code as shown above, what value will C have? Naturally, C will have the value of A + B. To check, you can input C below it to see the value of C.
+
+```
+C
+```
+
+Let's look at the following code.
+![Example Code](https://i.imgur.com/dM68qEG.png)
+In addition, you can use the sqrt function to paste radicals, and in the case of strings, you can use the paste function to paste them. This will be summarized in the next chapter.
+
 
 ## In Korea
 
@@ -87,11 +109,11 @@ typeof(변수)
 는 변수를 참으로 설정한다.
 
 
-# 산술 연산과 변수 사용하기
+## 산술 연산과 변수 사용하기
 
 변수를 사용하고, 산술 연산을 진행하며, 호출 기능을 해볼 것이다. 다양한 용도로 변수를 사용할 것이다.  
 
-## 산술 연산 예제
+### 산술 연산 예제
 
 ```
 A <- 10
@@ -109,4 +131,5 @@ C
 
 ![Example Code](https://i.imgur.com/dM68qEG.png)
 
+이외에도, sqrt함수는 근호를, 문자열의 경우는 paste함수를 사용하면 붙이기를 할 수 있다. 이는 다음 장에 정리할 것이다. 
 
