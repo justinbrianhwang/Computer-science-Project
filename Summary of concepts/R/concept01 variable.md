@@ -1,3 +1,47 @@
+## in English
+Five main variable types are available in R. To check the type of a variable, use the `typeof()` function.
+
+```
+typeof(variable)
+# If the output value is 'integer', it is an integer
+# If the output value is 'double', it is a mistake
+# If the output value is 'complex', it is a complex number
+# If the output value is 'character', then the character
+```
+
+Integer: You can use <- (arrow or assignment operator) to assign an integer to a variable. In R, numbers are basically treated as doubles, so to treat them as integers, you must add L to the end of the number. for example,
+```
+Variable <- 42L
+```
+sets the variable to an integer.
+
+Double: The value of a double can be assigned to a variable with <-. for example,
+```
+Variable <- 3.14
+```
+sets the variable to a real number.
+
+Complex number: Complex numbers can also be stored in variables.
+```
+Variable <- 1+4i
+```
+You can specify a complex number value as follows.
+
+Character: Strings are specified by enclosing them in double quotation marks.
+```
+Variable <- "Hello"
+```
+You can store a string in a variable like this:
+
+Logical variables: Logical values ​​are expressed as T (True) and F (False). for example,
+```
+Variable <- T
+```
+sets the variable to true.
+
+
+## in Korea
+
 ### R의 변수 타입
 
 R에서는 다섯 가지 주요 변수 타입을 사용할 수 있다. 변수의 타입을 확인하려면 `typeof()` 함수를 사용한다.
