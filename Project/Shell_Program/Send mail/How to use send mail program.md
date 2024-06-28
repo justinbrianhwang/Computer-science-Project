@@ -48,6 +48,7 @@ done
 echo -e "$body" | mail -s "$subject" -a "From: $sender" "$recipient"
 
 echo "Email sent from $sender to $recipient"
+```
 
 ### Usage Notes
 Ensure that the mail command is installed and properly configured on your system.
