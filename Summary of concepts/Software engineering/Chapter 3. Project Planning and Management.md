@@ -75,7 +75,7 @@ Important variables in cost estimation are the number of engineers input and the
 - Cost Estimation Techniques (COCOMO-81)
     - Use mathematical formulas based on size
     - Consider factors affecting the type of software being developed , the team , project process , and product.
-    - Effort = $A \times (\text{Size})^B \times M$
+    - Effort = $A \times (\text{Size})B \times M$
     - $A$ is a constant depending on the characteristics of the development institution and the type of software being developed.
     - Disadvantages)
         - It is difficult to predict the Size value in the early stages of the project.
