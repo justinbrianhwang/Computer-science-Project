@@ -78,5 +78,5 @@ This repository is distributed under the [MIT License](https://github.com/justin
 
 ## Contact
 
-- Email: [justinbrianhwang@gmail.com](mailto:justinbrianhwang@gmail.com)
+- Email: [sunjun7559@gmail.com](mailto:sunjun7559@gmail.com)
 - GitHub: [github.com/justinbrianhwang](https://github.com/justinbrianhwang)
