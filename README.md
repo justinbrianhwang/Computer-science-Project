@@ -55,7 +55,7 @@ This repository contains projects and study materials related to computer scienc
 
 - **Computer Architecture**
 
-- **Software Engineering**
+- [**Software Engineering**](https://github.com/justinbrianhwang/computer-science/tree/main/Summary%20of%20concepts/Software%20engineering)
   - Processes and Methodologies
   - Project Planning and Management
   - Requirements Analysis
