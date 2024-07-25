@@ -68,6 +68,8 @@ This repository contains projects and study materials related to computer scienc
   - Maintenance
   - Quality
 
+- **Signals and Systems**
+
 ## Contribution
 
 If you would like to contribute to this repository, please follow the [Contribution Guidelines](https://github.com/justinbrianhwang/computer-science).
