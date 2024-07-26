@@ -40,6 +40,10 @@ This repository contains projects and study materials related to computer scienc
   - Link: [Send mail](https://github.com/justinbrianhwang/computer-science/tree/main/Project/Shell_Program/Send%20mail)
   - Language: shell
 
+- **GitHub Unfollowers Checker**
+  - Description: This script checks which GitHub users a specified user is following but who are not following back using the GitHub API.
+  - Link: [GitHub Unfollowers Checker](https://github.com/justinbrianhwang/computer-science/tree/main/Project/Python_programs/Code%20to%20find%20people%20who%20unfollowed%20you%20on%20GitHub)
+  - Language: python
 
 
 ## Concepts
