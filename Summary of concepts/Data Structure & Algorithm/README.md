@@ -6,7 +6,7 @@ This directory contains organized notes and materials summarizing key concepts i
 
 ## Table of Contents
 
-### **Chapter 01: Overview of Data Structures**
+### **Chapter 01: Overview of Data Structures and Algorithms**
 1.1 Introduction to Data Structures  
 - 1.1.1 What is a Data Structure?
 - 1.1.2 Importance of Data Structures
