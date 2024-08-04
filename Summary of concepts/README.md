@@ -31,6 +31,12 @@ This section summarizes the book **"Continuous and Discrete Signals and Systems"
 
 This section organizes notes and materials summarizing the book **"All About Software Engineering"** by **Choi Eun-man**. It includes topics like software development processes, project management, requirements analysis, design principles, and testing.
 
+### **Data structure & Algorithm**
+[Data structure & Algorithm](https://github.com/justinbrianhwang/computer-science/tree/main/Summary%20of%20concepts/Data%20Structure%20%26%20Algorithm)
+
+This section contains notes and resources related to Data Structures and Algorithms. It covers fundamental concepts, techniques, and applications related to various data structures and algorithms.
+
+
 ---
 
 Thank you for using this resource. We hope it proves to be a valuable aid in your studies. If you have any suggestions or contributions, please feel free to make a pull request or contact us.
