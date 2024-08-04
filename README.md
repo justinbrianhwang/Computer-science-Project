@@ -48,7 +48,7 @@ This repository contains projects and study materials related to computer scienc
 
 ## Concepts
 
-- **Data Structures**
+- [**Data Structures**](https://github.com/justinbrianhwang/computer-science/tree/main/Summary%20of%20concepts/Data%20Structure%20%26%20Algorithm)
 
 - **Algorithms**
 
