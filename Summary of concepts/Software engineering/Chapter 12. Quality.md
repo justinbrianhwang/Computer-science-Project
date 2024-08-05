@@ -1,271 +1,117 @@
 # English
 
-### Maintenance
+### Quality
 
-Software maintenance involves modifications after development to ensure software remains useful and meets evolving business and environmental needs.
+Developing high-quality software is challenging, but quality management is essential.
 
-**Legacy Systems**
-Replacing legacy systems can be costly.
-These systems contain valuable knowledge, experience, and intelligence.
-- Bug fixes
-- Changes in the operating environment
-- Changes in government policies and regulations
-- Changes in business procedures
-- Changes to prevent future problems
+**Activities to Improve Quality**
 
-**Types of Maintenance**
+1. **Testing**
+   - Testing often occurs too late in the product lifecycle.
+   - It addresses only a narrow aspect.
+   - It primarily enhances code quality.
 
-1. **Corrective Maintenance**
-    - Fixing discovered defects in software products
+2. **Review**
+   - Complements testing by identifying errors early.
+   - Errors can be detected in the early stages of development.
 
-2. **Adaptive Maintenance**
-    - Adapting software to work in changed environments
+3. **Quality Assurance**
+   - Collaborates with developers to establish appropriate standards and procedures for software development.
+   - Monitors activities through reviews and audits to ensure adherence.
+   - Provides feedback to senior management and stakeholders on progress towards quality goals.
 
-3. **Perfective Maintenance**
-    - Improving performance or maintainability of software
+**Quality Management**
 
-4. **Preventive Maintenance**
-    - Preventing potential issues in the future
+Involves quality planning, quality control, quality assurance, verification, and various quality-related processes.
+- Setting quality goals
+- Managing and controlling activities to achieve these goals
+- Measurement
+- Process evaluation and improvement
 
-## Lehman's Laws
+**Improving Quality**
 
-Trends and patterns in maintenance changes
+Quality has different definitions based on perspectives, impacting quality management activities.
+- Customer satisfaction
+- Conformance to requirements
+- Product quality
 
-System Types:
-E-type - Systems that evolve continuously
-S-type - Systems that can be fully defined
+**Concepts of Quality**
 
-### Law of Continuing Change
+Quality definitions vary by perspective, influencing quality management activities.
+- **Customer Satisfaction**
+   - User satisfaction is based on overall product factors, with quality being one aspect.
+- **Conformance to Requirements**
+   - Absence of ambiguity.
+   - A product that adheres to specified requirements and design is considered high-quality.
+   - Does not imply a certain level of sophistication.
+- **Product Quality**
+   - A set of attributes that determine quality.
+   - Example: Three attributes determining the quality of a digital camera.
 
-- Systems must continually adapt to changing environments to remain useful.
-- Software requirements are always changing, so software must continually evolve.
+**Software Quality**
 
-### Law of Increasing Complexity
+The degree to which a system, component, or process meets specified requirements.
+The degree to which it satisfies customer or user needs or expectations.
 
-- Software systems become more complex over time unless efforts are made to reduce complexity.
-- Restructuring/reengineering is necessary to improve system structure.
+→ The perspective on software work determines the focus on quality attributes.
 
-### Law of Self-Regulation
+![qu](blob:https://imgur.com/686a64e8-4ce6-45f1-893f-a834581541e5)
 
-- System attributes follow a probabilistic distribution.
+**Software Quality Characteristics**
 
-### Law of Conservation of Organizational Stability
+Software quality characteristics exist on three dimensions:
+- **Quality Factors:** External user perspective.
+- **Quality Criteria:** Internal developer perspective.
+- **Metric Dimension:** Quality control.
 
-- The average work rate for an evolving system remains constant until the system becomes obsolete.
+**Quality Attributes**
 
-### Law of Conservation of Familiarity
+1. **Reliability:** Ability of software to perform required functions under specified conditions consistently.
+2. **Robustness:** Ability to perform required functions under difficult or unexpected conditions.
+3. **Efficiency:** Ability to achieve desired results with minimal time and resources.
+4. **Interoperability:** Ability to exchange information with other software.
+5. **Maintainability:** Ability to be repaired and evolved.
+6. **Testability:** Ability to undergo all forms of evaluation, inspection, peer review, white-box testing, black-box testing, etc.
+7. **Portability:** Ability to run on various environments and platforms.
+8. **Reusability:** Ability to be used in similar or different contexts without major modifications.
+9. **Modularity:** Ease of integrating or adjusting components.
 
-- The rate of functional growth in a system remains constant until the system becomes obsolete.
+**Quality Management**
 
-### Law of Continuing Growth
+Planned and systematic activities to ensure a software product or item meets specified requirements.
+Involves diverse tasks and has significant impact.
 
-- Systems must continue to grow in functionality to satisfy users.
+- Quality management functions
+- Definition of processes and standards
+- Quality assurance
+- Process improvement
 
-### Law of Declining Quality
+**Quality Assurance Organization**
 
-- Software quality will decline unless it adapts fully to the operating environment.
+Administrative Activities:
+- Ensuring the development organization follows standardized methodologies.
 
-### Law of Feedback Systems
+Technical Activities:
+- Well-defined methodologies.
 
-- Evolution processes consist of multiple iterations and feedback from stakeholders.
+**Quality Planning**
 
-## Types of Maintenance
-
-**Corrective Maintenance**: Planned problem-solving based on discovered errors
-
-**Adaptive Maintenance**: Porting to new data, operating systems, or hardware environments
-
-**Perfective Maintenance**: Changes to improve performance or maintainability
-
-**Emergency Maintenance**: Unplanned maintenance for emergency fixes
-
-### Maintenance Process
-
-1. Understanding the Current Program
-   - Trace program logic or understand requirements, design, etc.
-   
-      ↓
-      
-2. Identifying and Analyzing Changes
-   - Identify necessary changes, analyze impact, costs, and risks
-   
-      ↓
-      
-3. Assessing Change Impact
-   - Communicate with stakeholders and gather feedback
-   
-      ↓
-      
-4. Implementing, Testing, and Installing Changes
-   - Modify the system, verify the changes, and install updates
-
-### Maintenance Process Models
-
-**Quick Fix Model**
-
-An ad-hoc maintenance model to resolve issues as quickly as possible without extensive analysis. Documentation is minimized.
-
-**Iterative Enhancement Model**
-
-Continuous system improvements through iterative changes across the system lifecycle.
-
-**Reuse-Oriented Model**
-
-Maintenance tasks revolve around reusing program components.
-
-### Understanding Programs
-
-To modify software, one must understand the program.
-
-Abstracting designs or specifications from source code into mental models
-The reverse of the development process aiming for higher abstraction
-
-### Identifying and Analyzing Changes
-
-Identify which parts need modification based on change requests and explore alternative solutions.
-
-- Change analysis
-- Impact analysis
-- Estimating time and cost for implementing and testing changes
-- Risk assessment
-
-### Configuration Management
-
-Tracks the status of documents and software system components throughout the development cycle.
-
-Prevent inconsistencies when documents and deliverables change.
-Class changes must be updated in dependent classes.
-Apply traditional principles used in hardware to software development.
-
-### Baseline
-
-A collection of software configuration items.
-
-**Purpose**
-- Define critical project states
-- Indicate when a product reaches a particular state
-- Serve as a reference for ongoing development and maintenance
-- Control changes to configuration items
-
-**Types**
-
-- Plan Baseline: Requirements, domain model, plans
-- Requirements Baseline: Use cases, requirement specs, user manual drafts
-- Design Baseline: Class/sequence diagrams, integration test plans
-- Implementation Baseline: Source code, unit test cases/results
-- Integration Baseline: Integration test cases/results reports
-- Verification Baseline: Verification test cases/results reports, installation manual, user manual
-
-### Necessity of Configuration Management
-
-Unnecessary if a small number of developers work in one location.
-
-Necessary for coordinating and synchronizing work among many teams and developers.
-Essential for maintaining various versions to satisfy different customers.
-
-### Configuration Management Procedure
-
-![struct](https://i.imgur.com/IAeFSDG.png)
-
-- Software configuration identification
-- Configuration change control
-- Software configuration auditing
-- Software configuration status accounting
-
-### Configuration Identification
-
-- Unique identifier - unique number
-- Name
-- Document type
-- Document file
-- Author
-- Creation date, target completion date
-- Version number
-- Update history
-- Description
-- SQA Manager - Quality Assurance Manager
-- SCM Manager - Configuration item checker
-
-### Configuration Change Control
-
-Determine the reason for changes:
-- Software defects
-- Hardware changes
-- Changes in operational requirements
-- Customer or user improvement requests
-- Changes in budget, project schedules, or durations
-
-- Change analysis
-- Prepare change proposals
-   - Description, identifying organizations and developers, reasons, affected items, effort estimation, impact on project schedules
-- Evaluate change proposals
-- Implement changes
-
-### Configuration Auditing
-
-Define mechanisms to establish baselines and subsequent approved baselines.
-
-Review configuration items to ensure no discrepancies.
-Verify the correctness of configuration items to confirm proper problem resolution.
-
-### Reverse Engineering
-
-Analyzing a system to identify its components and their relationships, creating representations at the same or higher levels of abstraction.
-
-Incrementally recover the abstraction level of the program.
-
-**Reverse Engineering Process**
-
-Extract software deliverables from source code.
-Components of reverse engineering tools.
-
-![re](https://i.imgur.com/RfcoQeu.png)
-
-**Uses of Reverse Engineering**
-
-Reconstructed diagrams can be used in various ways:
-
-1. Program Understanding
-   - Easier comprehension of software structure, functionality, and behavior
-2. Formal Analysis
-   - Detect potential issues in software
-3. Test Case Generation
-   - Flow paths in flowcharts aid in path test case generation
-4. Reengineering
-
-**Redocumentation**
-
-Generating representations at the same level of abstraction with semantic equivalence.
-
-Purpose
-- Enhance understanding of software by presenting different system perspectives
-- Improve existing documentation
-- Document newly modified programs
-
-**Design Recovery**
-
-Analyzing source code to extract meaningful high-abstraction representations.
-
-Recovered designs aid in source code understanding, serve as baselines for future maintenance or reengineering, and can be used for similar applications.
-
-**Reengineering**
-
-Restructuring systems or components.
-Purpose:
-- Improve software architecture
-- Reduce software complexity
-- Enhance adaptability to changes
-- Improve performance, efficiency, and resource utilization
-- Improve software system maintainability
-
-**Process**
-
-- Identify areas needing improvement
-- Select improvement strategies
-- Implement proposed improvements
-- Evaluate the system based on objectives
-
-
+- Conducted at the beginning of each project.
+- Objectives
+- Management
+- Standards and conventions
+- Reviews and audits
+- Configuration management
+- Processes, methodologies, tools, techniques
+- Metrics, indicators
+
+**Quality Control**
+
+Ensuring plans are executed accurately.
+Helping developers perform quality assurance activities.
+Collecting quality-related data and managing it using a database.
+Suggesting process improvements to management.
+Ensuring accepted suggestions are appropriately implemented and integrated into the process.
 
 
 # Korean
