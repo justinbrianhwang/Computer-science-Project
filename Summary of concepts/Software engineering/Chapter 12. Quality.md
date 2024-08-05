@@ -55,7 +55,7 @@ The degree to which it satisfies customer or user needs or expectations.
 
 → The perspective on software work determines the focus on quality attributes.
 
-![qu](blob:https://imgur.com/686a64e8-4ce6-45f1-893f-a834581541e5)
+![qu](https://i.imgur.com/frRcjnm.png))
 
 **Software Quality Characteristics**
 
@@ -180,7 +180,7 @@ Ensuring accepted suggestions are appropriately implemented and integrated into 
 
 → 소프트웨어에 대한 작업 관점이 있느냐에 따라 품질 속성의 관심이 달라짐
 
-![qu](blob:https://imgur.com/686a64e8-4ce6-45f1-893f-a834581541e5)
+![qu](https://i.imgur.com/frRcjnm.png)
 
 **소프트웨어 품질 특성**
 
