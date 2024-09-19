@@ -44,6 +44,12 @@ A repository for organizing and sharing key theoretical concepts and principles 
   - Link: [GitHub Unfollowers Checker](https://github.com/justinbrianhwang/computer-science/tree/main/Project/Python_programs/Code%20to%20find%20people%20who%20unfollowed%20you%20on%20GitHub)
   - Language: Python
 
+- **Word Embedding Project - Skip-gram Model**
+  - Description: This project focuses on training word embeddings using a Skip-gram model with negative sampling. The model is trained on a large text corpus and can find semantically related words based on cosine similarity or Euclidean distance.
+  - Link: [Word Embedding Project](https://github.com/justinbrianhwang/Computer-science-Project/tree/main/Project/Python_programs/%20Word%20Embedding%20Project%20-%20Skip-gram%20Model)
+  - Language: Python
+
+
 ## Contribution
 
 If you would like to contribute to this repository, please follow the [Contribution Guidelines](https://github.com/justinbrianhwang/computer-science).
