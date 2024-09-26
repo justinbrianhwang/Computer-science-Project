@@ -1,6 +1,6 @@
-# Computer Theory
+# Computer science project
 
-A repository for organizing and sharing key theoretical concepts and principles in computer science.
+A repository for computer science project.
 
 ## Projects
 
