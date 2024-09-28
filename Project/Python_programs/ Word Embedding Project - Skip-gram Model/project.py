@@ -1,11 +1,6 @@
 ## 자연어처리 프로젝트 과제 1번
 # 구글 코랩이 적용이 잘 안되어, pycharm 환경에서 코드를 새롭게 짰습니다.
 
-# p함수
-def p(str):
-    print(str, '\n')
-
-
 # 필요한 라이브러리 import
 import os
 import time
@@ -58,157 +53,6 @@ def cleaning_word(oword):
         return '<NO>'
 
 # (1)문장의 단어를 읽어, 사전을 만들자
-'''
-처음 txt 파일로 저장을 따로 하여, 사용할 때마다 여러 개의 문장이 저장된 파일이 아닌, 빈도수와 함께 저장되어있는 단어 파일만 가져오도록
-유도 하였으나, txt 파일의 처리보다는 pandas의 csv 파일의 처리가 더 쉬워보여, 처음 코드가 아닌 csv 파일로 진행하였습니다. 
-txt 파일 부분도 주석으로 남기긴 하겠습니다. 봐주시면 감사할 것 같습니다.  
-'''
-
-'''
-txt로 처리하는 부분
-# 사전 저장 경로
-vocab_file_path = './vocab.txt'
-
-# 임계값 설정
-frequency_threshold = 0
-
-# 1. 파일에서 문장 읽기 및 단어 빈도수 계산
-def build_vocab_from_files(file_list, cleaning_func, threshold=1):
-    word_freq = defaultdict(int)  # 단어 빈도 저장
-
-    for file_name in file_list:
-        print(f"Processing file: {file_name}")  # 파일 이름 출력
-        try:
-            with open(file_name, 'r', encoding='utf-8') as fp:
-                for line in fp:
-                    print(f"Raw line: {line.strip()}")  # 원래 줄을 출력
-                    words = line.split()  # 공백을 기준으로 단어 분리
-                    for word in words:
-                        cleaned_word = cleaning_func(word)
-                        print(f"Original word: {word}, Cleaned word: {cleaned_word}")  # 정제된 단어 확인
-                        if cleaned_word != '<NO>':
-                            word_freq[cleaned_word] += 1  # 단어 빈도수 추가
-        except Exception as e:
-            print(f"Error reading file {file_name}: {e}")
-
-    # 2. 빈도수 기준으로 단어 정렬
-    sorted_vocab = sorted(word_freq.items(), key=lambda kv: kv[1])
-    print(f"Sorted vocab size: {len(sorted_vocab)}")
-
-    # 3. 임계값을 넘는 단어만 사전에 추가
-    vocab = {}
-    total_n_words = len(sorted_vocab)
-    # 역순으로 추가하지 않고 정순으로 단어를 사전에 추가
-    for i in range(total_n_words):
-      word = sorted_vocab[i][0]
-      freq = sorted_vocab[i][1]
-      print(f"Word: {word}, Frequency: {freq}")
-
-      if freq >= threshold:  # threshold가 0이라면 모든 단어가 추가될 것임
-        vocab[word] = [i, freq]  # 정순으로 인덱스를 추가
-        print(f"Added word '{word}' with index {i} and frequency {freq}")
-
-
-    return vocab
-
-
-# 3. 사전 파일로 저장
-def save_vocab(vocab, file_path):
-    with open(file_path, 'w', encoding='utf-8') as f:
-        for word, (idx, freq) in vocab.items():
-            f.write(f"{word}\t{idx}\t{freq}\n")
-            print(f"Saving word: {word}, Index: {idx}, Frequency: {freq}")  # 추가된 부분
-
-
-# 4. 사전 파일에서 불러오기
-def load_vocab(file_path):
-    vocab = {}
-    if os.path.exists(file_path):
-        with open(file_path, 'r', encoding='utf-8') as f:
-            for line in f:
-                parts = line.strip().split('\t')
-                if len(parts) == 3:
-                    word, idx, freq = parts
-                    vocab[word] = [int(idx), int(freq)]
-                else:
-                    print(f"Skipping line due to format issue: {line}")
-    return vocab
-
-# 5. 사전 생성 또는 불러오기
-def get_or_create_vocab(file_list, vocab_file, cleaning_func, threshold):
-    # vocab.txt 파일이 존재하면 로드
-    if os.path.exists(vocab_file):
-        print(f"Loading vocab from {vocab_file}")
-        vocab = load_vocab(vocab_file)
-    else:
-        print(f"Building vocab from files")
-        word_freq = defaultdict(int)  # 단어 빈도 저장
-
-        # 파일들을 읽어서 사전 생성
-        for file_name in file_list:
-            print(f"Processing file: {file_name}")
-            try:
-                with open(file_name, 'r', encoding='utf-8') as fp:
-                    for line in fp:
-                        print(f"Line from file: {line.strip()}")  # 파일에서 읽은 내용을 출력
-                        words = line.split()  # 공백을 기준으로 단어 분리
-                        for word in words:
-                            cleaned_word = cleaning_func(word)
-                            # 여기에 확인하는 코드를 넣습니다
-                            if cleaned_word == '<NO>':
-                                print(f"Skipping word '{word}' after cleaning.")
-                            elif not cleaned_word:
-                                print(f"Empty word encountered: Original word '{word}'")
-                            else:
-                                print(f"Processed word '{cleaned_word}' from original '{word}'")
-
-                            if cleaned_word != '<NO>':  # 유효한 단어만 처리
-                                word_freq[cleaned_word] += 1  # 단어 빈도수 추가
-                            else:
-                                print(f"Excluding word: {word} (cleaned: {cleaned_word})")  # <NO> 단어 제외
-            except Exception as e:
-                print(f"Error reading file {file_name}: {e}")
-
-        # 빈도수 확인
-        if len(word_freq) == 0:
-            print("No words were added to the vocabulary.")
-
-        # 2. 빈도수 기준으로 단어 정렬
-        sorted_vocab = sorted(word_freq.items(), key=lambda kv: kv[1])
-        print(f"Sorted vocab size: {len(sorted_vocab)}")
-
-        # 3. 임계값을 넘는 단어만 사전에 추가
-        vocab = {}
-        total_n_words = len(sorted_vocab)
-        for i in range(total_n_words - 1, -1, -1):
-            word = sorted_vocab[i][0]
-            freq = sorted_vocab[i][1]
-            print(f"Word: {word}, Frequency: {freq}")
-
-            if freq >= threshold:
-                vocab[word] = [total_n_words - 1 - i, freq]
-            else:
-                break
-
-        # 생성된 사전을 파일로 저장
-        save_vocab(vocab, vocab_file)
-
-    return vocab
-
-# 실행 예시
-cur_dir_path = './AP_corpus_one_line_per_sentence'
-dir_list = [os.path.join(cur_dir_path, file_name) for file_name in os.listdir(cur_dir_path)]
-
-# 사전 생성 또는 불러오기
-vocab = get_or_create_vocab(dir_list, vocab_file_path, cleaning_word, frequency_threshold)
-
-# 결과 확인
-print(f"Vocabulary size: {len(vocab)}")
-print(f"Sample words from vocab: {list(vocab.items())[:10]}")
-
-# 사전이 추가된 후, 사전 크기 확인
-print(f"Vocabulary size after adding words: {len(vocab)}")
-'''
 
 # csv 처리
 vocab_file_path = './vocab.csv'
@@ -642,13 +486,6 @@ similar_words = find_similar_words(w, model, vocab, top_k=5, similarity_metric="
 print(f"Top 5 similar words to {w}:")
 for word, similarity in similar_words:
     print(f"{word}: {similarity:.4f}")
-
-
-'''
-코드를 짜는데 18시간 정도 소요되었으며, 
-모든 약간의 조교님의 도움을 받았습니다. 
-'''
-
 
 
 
