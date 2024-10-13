@@ -160,7 +160,7 @@ def evaluate_model(model, data_loader, y_test, vocab, labels):
     print(classification_report(y_true_flat, predictions_flat))
 
 # RNN 및 LSTM 모델 학습 및 평가
-def train_and_evaluate_model(model, train_loader, test_loader, num_labels, vocab, labels, num_epochs=5):
+def train_and_evaluate_model(model, train_loader, test_loader, num_labels, vocab, labels, num_epochs=20):
     optimizer = optim.AdamW(model.parameters(), lr=5e-5)  # 학습률을 1e-4에서 5e-5로 낮췄습니다.
     criterion = nn.CrossEntropyLoss(ignore_index=0)
 
@@ -189,3 +189,5 @@ train_and_evaluate_model(rnn_model, train_loader, test_loader, num_labels, vocab
 lstm_model = LSTMModel(vocab_size, hidden_size=512, num_labels=num_labels)
 print("LSTM 모델 학습 및 평가")
 train_and_evaluate_model(lstm_model, train_loader, test_loader, num_labels, vocab, labels)
+
+
